@@ -1,4 +1,8 @@
 // work01.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+// 以降のコードを続ける
 
 
 // Greetingコンポーネントの定義
@@ -10,43 +14,43 @@ function Greeting(human) {
   ReactDOM.render(
     <div>
         <h4>work01</h4>
-        <p>改造して、フォームに入力した名前に対して挨拶するようにしたかったのですが、うまくできませんでした。
-            ずっと最初からimportを使っているのに「requierは使えません」というエラーが出続け、work01止まりになってしまいました…
+        <p>
         </p>
-        <Greeting name="Honoka" />
     </div>,
     document.getElementById('root')
 );
 
-// import React, { useState } from 'react'; // ReactとuseStateをインポート
+export default Greeting;
+
+
+
+// import React, { useState } from 'react';
 // import ReactDOM from 'react-dom';
 
-// function Greeting() {
-//   const [name, setName] = useState(""); // Stateとして名前を管理する
 
-//   const handleNameChange = (event) => {
-//     setName(event.target.value);
-//   };
-
-//   const handleButtonClick = () => {
-//     alert(`Hello, ${name}`); // 入力された名前をアラートで表示
-//   };
-
-//   return (
-//     <div>
-//       {/* 入力フォーム */}
-//       <input type="text" value={name} onChange={handleNameChange} />
-//       {/* 決定ボタン */}
-//       <button onClick={handleButtonClick}>決定</button>
-//     </div>
-//   );
+// function Greeting({name}){
+//     return <h3>Hello, {name}</h3>;
 // }
 
-// const message = "Hello, world!";
+// function App(){
+//     const[name, setName] = useState('');
 
-// ReactDOM.render(
-//   <div>{message}</div>,
-// // ReactDOM.render(
-// //   <Greeting />,
-//   document.getElementById('root')
-// );
+//     const handleChange = (event) => {
+//         setName(event.target.value);
+//     };
+
+//     return(
+//         <div>
+//             <h4>work01</h4>
+//             <input 
+//             type = "text"
+//             placeholder="名前を入力"
+//             value = {name}
+//             onChande = {handleChange}
+//             />
+//             <Greeting name = {name}/>
+//         </div>
+//     );
+// }
+
+// export default App;

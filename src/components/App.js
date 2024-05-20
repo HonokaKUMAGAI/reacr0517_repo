@@ -1,5 +1,7 @@
 // import logo from './assets/logo.svg';
 import '../styles/App.css';
+import Greeting from './work01.js';
+import Greeting2 from './work01-2.js';
 
 function App() {
   return (
@@ -16,6 +18,9 @@ function App() {
         >
           Learn React
         </a>
+
+        <Greeting name = "Honoka"/>
+        {/* <Greeting2 /> */}
       </header>
     </div>
   );
